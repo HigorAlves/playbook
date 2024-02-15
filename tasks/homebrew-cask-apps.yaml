@@ -27,3 +27,20 @@
   homebrew_cask:
     name: grammarly
     state: present
+
+- name: Tap homebrew/cask-fonts
+  shell: brew tap homebrew/cask-fonts
+  args:
+    executable: /bin/bash
+    
+- name: Install Nerd Fonts
+  shell: brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs brew install --cask
+  args:
+    executable: /bin/bash
+
+- name: Clone Powerlevel10k with depth 1
+  git:
+    repo: 'https://github.com/romkatv/powerlevel10k.git'
+    dest: '~/powerlevel10k'
+    depth: 1
+    version: 'master'
