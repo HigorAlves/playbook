@@ -1,0 +1,3 @@
+- name: Install apps from the App Store using Mas
+  command: mas install {{ item }}
+  loop: "{{ app_store_apps }}"
