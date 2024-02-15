@@ -12,3 +12,18 @@
   homebrew_cask:
     name: 1password
     state: present
+    
+- name: Install Microsoft Teams via Homebrew Cask
+  homebrew_cask:
+    name: microsoft-teams
+    state: present
+    
+- name: Install Zoom via Homebrew Cask
+  homebrew_cask:
+    name: zoom
+    state: present
+
+- name: Install Grammarly via Homebrew Cask
+  homebrew_cask:
+    name: grammarly
+    state: present
