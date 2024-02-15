@@ -1,0 +1,16 @@
+- name: Ensure the Developer directory exists
+  file:
+    path: "~/Developer"
+    state: directory
+    mode: '0755'
+
+- name: Create a list of directories inside ~/Developer
+  file:
+    path: "~/Developer/{{ item }}"
+    state: directory
+    mode: '0755'
+  loop:
+    - AKQA
+    - Ask
+    - Novac
+    - OSS

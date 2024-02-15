@@ -7,6 +7,9 @@
     - name: Print message
       ansible.builtin.debug:
         msg: Hello World
+        
+    - name: Include Folder Configuration
+      include_tasks: tasks/folder.yaml
     
     - name: Include MacOS config
       include_tasks: tasks/macos-config.yaml
