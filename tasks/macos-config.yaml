@@ -16,3 +16,49 @@
 - name: Install Homebrew
   shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   when: not homebrew_installed.stat.exists
+  
+- name: Set computer name (as seen in Sharing Preferences)
+  ansible.builtin.command:
+    cmd: "sudo scutil --set ComputerName {{ new_hostname }}"
+  become: yes
+
+- name: Set local hostname (Bonjour hostname)
+  ansible.builtin.command:
+    cmd: "sudo scutil --set LocalHostName {{ new_hostname }}"
+  become: yes
+
+- name: Set system hostname
+  ansible.builtin.command:
+    cmd: "sudo scutil --set HostName {{ new_hostname }}"
+  become: yes
+
+- name: Enable Tap to Click for the built-in trackpad
+  ansible.builtin.command:
+    cmd: "defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true"
+  become: yes
+
+- name: Enable Tap to Click for the Bluetooth trackpad
+  ansible.builtin.command:
+    cmd: "defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true"
+  become: yes
+
+- name: Ensure changes take effect
+  ansible.builtin.command:
+    cmd: "killall Finder"
+  become: yes
+  ignore_errors: yes
+
+- name: Set Dock size
+  ansible.builtin.command:
+    cmd: "defaults write com.apple.dock tilesize -int 36"  # Sets the Dock size. Adjust the integer value as desired.
+  become: yes
+  
+- name: Enable Dock magnification
+  ansible.builtin.command:
+    cmd: "defaults write com.apple.dock magnification -bool true"  # Set to false to disable magnification
+  become: yes
+  
+- name: Set magnification size (if magnification is enabled)
+  ansible.builtin.command:
+    cmd: "defaults write com.apple.dock largesize -int 128"  # Adjust the magnification size as desired.
+  become: yes

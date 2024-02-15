@@ -3,13 +3,15 @@
   connection: local
   gather_facts: no
   
+  vars_prompt:
+    - name: new_hostname
+      prompt: "Enter the new hostname for your machine"
+      private: no
+  
   tasks:
     - name: Print message
       ansible.builtin.debug:
         msg: Hello World
-        
-    - name: Include Folder Configuration
-      include_tasks: tasks/folder.yaml
     
     - name: Include MacOS config
       include_tasks: tasks/macos-config.yaml
@@ -25,3 +27,6 @@
 
     - name: Include the Apple Store Apps
       import_tasks: tasks/app-store-apps.yaml
+      
+    - name: Include Folder Configuration
+      include_tasks: tasks/folder.yaml
