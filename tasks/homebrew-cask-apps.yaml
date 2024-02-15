@@ -1,0 +1,14 @@
+- name: Install Google Chrome via Homebrew Cask
+  homebrew_cask:
+    name: google-chrome
+    state: present
+    
+- name: Install Jetbrains Toolbox via Homebrew Cask
+  homebrew_cask:
+    name: jetbrains-toolbox
+    state: present
+    
+- name: Install 1Password via Homebrew Cask
+  homebrew_cask:
+    name: 1password
+    state: present

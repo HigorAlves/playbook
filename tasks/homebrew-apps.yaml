@@ -1,0 +1,54 @@
+- name: Install GPG
+  homebrew:
+    name: gpg
+    state: present
+
+- name: Install ZSH
+  homebrew:
+    name: zsh
+    state: present
+
+- name: Install Node Version Manager (NVM)
+  homebrew:
+    name: nvm
+    state: present
+    
+- name: Install Grafana K6
+  homebrew:
+    name: k6
+    state: present
+    
+- name: Install Terraform
+  homebrew:
+    name: terraform
+    state: present
+    
+- name: Install Cocoapods
+  homebrew:
+    name: cocoapods
+    state: present
+    
+- name: Install Shortcat
+  homebrew:
+    name: shortcat
+    state: present
+    
+- name: Install Iterm2
+  homebrew:
+    name: iterm2
+    state: present
+
+- name: Install Tmux
+  homebrew:
+    name: tmux
+    state: present
+
+- name: Install Watchman
+  homebrew:
+    name: watchman
+    state: present
+
+- name: Install NeoVim (NVim)
+  homebrew:
+    name: neovim
+    state: present

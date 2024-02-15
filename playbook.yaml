@@ -1,0 +1,18 @@
+- name: Configure Developer host.
+  hosts: myhosts
+  connection: local
+  gather_facts: no
+  
+  tasks:
+    - name: Print message
+      ansible.builtin.debug:
+        msg: Hello World
+    
+    - name: Include MacOS config
+      include_tasks: tasks/macos-config.yaml
+      
+    - name: Include Homebrew tasks
+      include_tasks: tasks/homebrew-apps.yaml
+
+    - name: Include Homebrew Cask tasks
+      import_tasks: tasks/homebrew-cask-apps.yaml

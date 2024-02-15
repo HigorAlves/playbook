@@ -1,0 +1,18 @@
+- name: Install Xcode Command Line Tools
+  command: xcode-select --install
+  ignore_errors: yes
+  become: yes
+  
+- name: Accept Xcode license agreement
+  shell: xcodebuild -license accept
+  ignore_errors: yes
+  become: yes
+  
+- name: Check if Homebrew is installed
+  stat:
+    path: /usr/local/bin/brew
+  register: homebrew_installed
+
+- name: Install Homebrew
+  shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  when: not homebrew_installed.stat.exists
