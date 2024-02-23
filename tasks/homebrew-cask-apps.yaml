@@ -58,6 +58,11 @@
     name: microsoft-teams
     state: present
 
+- name: Install Spotify via Homebrew Cask
+  homebrew_cask:
+    name: spotify
+    state: present
+
 - name: Clone Powerlevel10k with depth 1
   git:
     repo: 'https://github.com/romkatv/powerlevel10k.git'
