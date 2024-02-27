@@ -63,6 +63,11 @@
     name: spotify
     state: present
 
+- name: Install Notion via Homebrew Cask
+  homebrew_cask:
+    name: notion 
+    state: present
+
 - name: Clone Powerlevel10k with depth 1
   git:
     repo: 'https://github.com/romkatv/powerlevel10k.git'
