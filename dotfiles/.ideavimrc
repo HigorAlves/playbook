@@ -1,0 +1,8 @@
+set scrolloff=5
+set incsearch
+set number relativenumber
+
+map Q gq
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
