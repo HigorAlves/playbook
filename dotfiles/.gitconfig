@@ -16,7 +16,5 @@ signingkey = CF3657F37E580DB3
 	enabled = true
 [column]
 	ui = auto
-[branch]
-	sort = --committerdate
 [commit]
-  gpgsign = true
+	gpgsign = true
