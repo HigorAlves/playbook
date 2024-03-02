@@ -9,10 +9,6 @@
       private: no
   
   tasks:
-    - name: Print message
-      ansible.builtin.debug:
-        msg: Hello World
-    
     - name: Include MacOS config
       include_tasks: tasks/macos-config.yaml
       
