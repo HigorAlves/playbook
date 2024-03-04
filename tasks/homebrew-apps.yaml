@@ -57,3 +57,8 @@
   homebrew:
     name: mas
     state: present
+
+- name: Install AWS CLI
+  homebrew:
+    name: awscli
+    state: present
