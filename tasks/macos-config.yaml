@@ -22,7 +22,7 @@
     cmd: "sudo scutil --set ComputerName {{ new_hostname }}"
   become: yes
 
-- name: Set local hostname (Bonjour hostname)
+- name: Set local hostname
   ansible.builtin.command:
     cmd: "sudo scutil --set LocalHostName {{ new_hostname }}"
   become: yes

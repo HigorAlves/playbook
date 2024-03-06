@@ -4,3 +4,38 @@
     dest: '~/powerlevel10k'
     depth: 1
     version: 'master'
+
+- name: Clone MotoNomades
+  git:
+    repo: 'https://github.com/HigorAlves/motonomades'
+    dest: '~/Developer/Novac/motonomades'
+    depth: 1
+    version: 'main'
+
+- name: Clone Playbook
+  git:
+    repo: 'https://github.com/HigorAlves/playbook'
+    dest: '~/Developer/OSS/playbook'
+    depth: 1
+    version: 'main'
+
+- name: Clone dotfiles
+  git:
+    repo: 'https://github.com/HigorAlves/dotfiles'
+    dest: '~/dotfiles'
+    depth: 1
+    version: 'main'
+
+- name: Clone Personal website
+  git:
+    repo: 'https://github.com/HigorAlves/higoralves.dev'
+    dest: '~/Develooper/Novac/higoralves.dev'
+    depth: 1
+    version: 'main'
+
+- name: Clone Docs
+  git:
+    repo: 'https://github.com/HigorAlves/docs'
+    dest: '~/Develooper/Novac/docs'
+    depth: 1
+    version: 'main'

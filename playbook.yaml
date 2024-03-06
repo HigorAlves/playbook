@@ -26,3 +26,6 @@
       
     - name: Include Folder Configuration
       include_tasks: tasks/folder.yaml
+    
+    - name: Clone Git Repos
+      include_tasks: tasks/git.yaml
