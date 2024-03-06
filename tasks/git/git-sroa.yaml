@@ -1,0 +1,6 @@
+- name: Clone SROA Backend Monorepo
+  git:
+    repo: 'https://github.com/SROADev/backend-monorepo'
+    dest: '~/Develooper/SROA/backend-monorepo'
+    depth: 1
+    version: 'main'

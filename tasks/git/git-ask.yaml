@@ -1,0 +1,27 @@
+- name: Clone Meson Core
+  git:
+    repo: 'https://git.ask.com/ask/meson/core'
+    dest: '~/Develooper/Ask/core'
+    depth: 1
+    version: 'main'
+
+- name: Clone Meson Gitops
+  git:
+    repo: 'https://git.ask.com/ask/meson/gitops'
+    dest: '~/Develooper/Ask/gitops'
+    depth: 1
+    version: 'main'
+
+- name: Clone Meson Modules
+  git:
+    repo: 'https://git.ask.com/ask/meson/modules'
+    dest: '~/Develooper/Ask/modules'
+    depth: 1
+    version: 'main'
+
+- name: Clone Meson Builder
+  git:
+    repo: 'https://git.ask.com/ask/meson/builder'
+    dest: '~/Develooper/Ask/builder'
+    depth: 1
+    version: 'main'

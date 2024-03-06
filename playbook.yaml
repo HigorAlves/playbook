@@ -28,4 +28,13 @@
       include_tasks: tasks/folder.yaml
     
     - name: Clone Git Repos
-      include_tasks: tasks/git.yaml
+      include_tasks: tasks/git/git.yaml
+    
+    - name: Clone Ask Git Repos
+      include_tasks: tasks/git/git-ask.yaml
+    
+    - name: Clone Arctouch Git Repos
+      include_tasks: tasks/git/git-at.yaml
+    
+    - name: Clone SROA Git Repos
+      include_tasks: tasks/git/git-sroa.yaml

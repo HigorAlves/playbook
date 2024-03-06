@@ -1,0 +1,6 @@
+- name: Clone Ryte Mobile App
+  git:
+    repo: 'https://github.com/ryte-ai/akqa-paris-par.ryte.b2c'
+    dest: '~/Develooper/AKQA/akqa-paris-par.ryte.b2c'
+    depth: 1
+    version: 'main'
