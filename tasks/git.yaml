@@ -1,0 +1,6 @@
+- name: Clone Powerlevel10k with depth 1
+  git:
+    repo: 'https://github.com/romkatv/powerlevel10k.git'
+    dest: '~/powerlevel10k'
+    depth: 1
+    version: 'master'

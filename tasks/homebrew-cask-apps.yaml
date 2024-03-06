@@ -65,12 +65,10 @@
 
 - name: Install Notion via Homebrew Cask
   homebrew_cask:
-    name: notion 
+    name: notion
     state: present
 
-- name: Clone Powerlevel10k with depth 1
-  git:
-    repo: 'https://github.com/romkatv/powerlevel10k.git'
-    dest: '~/powerlevel10k'
-    depth: 1
-    version: 'master'
+- name: Install Docker via Homebrew Cask
+  homebrew_cask:
+    name: docker
+    state: present
