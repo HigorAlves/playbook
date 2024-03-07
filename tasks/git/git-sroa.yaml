@@ -1,4 +1,5 @@
 - name: Clone SROA Backend Monorepo
+  tags: sroa
   git:
     repo: 'https://github.com/SROADev/backend-monorepo'
     dest: '~/Develooper/SROA/backend-monorepo'
@@ -6,6 +7,7 @@
     version: 'main'
 
 - name: Clone SROA Frontend Monorepo
+  tags: sroa
   git:
     repo: 'https://github.com/SROADev/applications'
     dest: '~/Develooper/SROA/applications'

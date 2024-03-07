@@ -1,4 +1,5 @@
 - name: Clone Meson Core
+  tags: ask
   git:
     repo: 'https://git.ask.com/ask/meson/core'
     dest: '~/Develooper/Ask/core'
@@ -6,6 +7,7 @@
     version: 'main'
 
 - name: Clone Meson Gitops
+  tags: ask
   git:
     repo: 'https://git.ask.com/ask/meson/gitops'
     dest: '~/Develooper/Ask/gitops'
@@ -13,6 +15,7 @@
     version: 'main'
 
 - name: Clone Meson Modules
+  tags: ask
   git:
     repo: 'https://git.ask.com/ask/meson/modules'
     dest: '~/Develooper/Ask/modules'
@@ -20,6 +23,7 @@
     version: 'main'
 
 - name: Clone Meson Builder
+  tags: ask
   git:
     repo: 'https://git.ask.com/ask/meson/builder'
     dest: '~/Develooper/Ask/builder'

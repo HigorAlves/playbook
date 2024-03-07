@@ -1,10 +1,12 @@
 - name: Ensure the Developer directory exists
+  tags: setup
   file:
     path: "~/Developer"
     state: directory
     mode: '0755'
 
 - name: Create a list of directories inside ~/Developer
+  tags: setup
   file:
     path: "~/Developer/{{ item }}"
     state: directory

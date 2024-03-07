@@ -1,4 +1,5 @@
 - name: Clone Powerlevel10k with depth 1
+  tags: setup
   git:
     repo: 'https://github.com/romkatv/powerlevel10k.git'
     dest: '~/powerlevel10k'
@@ -6,6 +7,7 @@
     version: 'master'
 
 - name: Clone MotoNomades
+  tags: novac
   git:
     repo: 'https://github.com/HigorAlves/motonomades'
     dest: '~/Developer/Novac/motonomades'
@@ -13,6 +15,7 @@
     version: 'main'
 
 - name: Clone Playbook
+  tags: novac
   git:
     repo: 'https://github.com/HigorAlves/playbook'
     dest: '~/Developer/OSS/playbook'
@@ -20,6 +23,7 @@
     version: 'main'
 
 - name: Clone dotfiles
+  tags: setup
   git:
     repo: 'https://github.com/HigorAlves/dotfiles'
     dest: '~/dotfiles'
@@ -27,6 +31,7 @@
     version: 'main'
 
 - name: Clone Personal website
+  tags: novac
   git:
     repo: 'https://github.com/HigorAlves/higoralves.dev'
     dest: '~/Develooper/Novac/higoralves.dev'
@@ -34,6 +39,7 @@
     version: 'main'
 
 - name: Clone Docs
+  tags: novac
   git:
     repo: 'https://github.com/HigorAlves/docs'
     dest: '~/Develooper/Novac/docs'

@@ -5,36 +5,47 @@
   
   vars_prompt:
     - name: new_hostname
+      tags: setup
       prompt: "Enter the new hostname for your machine"
       private: no
   
   tasks:
     - name: Include MacOS config
+      tags: setup
       include_tasks: tasks/macos-config.yaml
       
     - name: Include Homebrew tasks
+      tags: setup
       include_tasks: tasks/homebrew-apps.yaml
 
     - name: Include Homebrew Cask tasks
+      tags: setup
       import_tasks: tasks/homebrew-cask-apps.yaml
     
     - name: Include the Apple Store Apps IDs
+      tags: setup
       include_vars: vars/applestore-ids.yaml
 
     - name: Include the Apple Store Apps
+      tags: setup
       import_tasks: tasks/app-store-apps.yaml
       
     - name: Include Folder Configuration
+      tags: setup
       include_tasks: tasks/folder.yaml
     
     - name: Clone Git Repos
+      tags: setup
       include_tasks: tasks/git/git.yaml
     
     - name: Clone Ask Git Repos
+      tags: ask
       include_tasks: tasks/git/git-ask.yaml
     
     - name: Clone Arctouch Git Repos
+      tags: arctouch
       include_tasks: tasks/git/git-at.yaml
     
     - name: Clone SROA Git Repos
+      tags: sroa
       include_tasks: tasks/git/git-sroa.yaml

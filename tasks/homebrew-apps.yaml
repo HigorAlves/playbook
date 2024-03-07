@@ -1,64 +1,77 @@
 - name: Install GPG
+  tags: setup
   homebrew:
     name: gpg
     state: present
 
 - name: Install ZSH
+  tags: setup
   homebrew:
     name: zsh
     state: present
 
 - name: Install Node Version Manager (NVM)
+  tags: setup
   homebrew:
     name: nvm
     state: present
     
 - name: Install Grafana K6
+  tags: setup
   homebrew:
     name: k6
     state: present
     
 - name: Install Terraform
+  tags: setup
   homebrew:
     name: terraform
     state: present
     
 - name: Install Cocoapods
+  tags: setup
   homebrew:
     name: cocoapods
     state: present
     
 - name: Install Shortcat
+  tags: setup
   homebrew:
     name: shortcat
     state: present
     
 - name: Install Iterm2
+  tags: setup
   homebrew:
     name: iterm2
     state: present
 
 - name: Install Tmux
+  tags: setup
   homebrew:
     name: tmux
     state: present
 
 - name: Install Watchman
+  tags: setup
   homebrew:
     name: watchman
     state: present
 
 - name: Install NeoVim (NVim)
+  tags: setup
   homebrew:
     name: neovim
     state: present
 
 - name: Install Mas
+  tags: setup
   homebrew:
     name: mas
     state: present
 
 - name: Install AWS CLI
+  tags: setup
   homebrew:
     name: awscli
     state: present
