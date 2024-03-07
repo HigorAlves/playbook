@@ -53,11 +53,6 @@
     name: discord
     state: present
 
-- name: Install Microsoft Teams via Homebrew Cask
-  homebrew_cask:
-    name: microsoft-teams
-    state: present
-
 - name: Install Spotify via Homebrew Cask
   homebrew_cask:
     name: spotify
