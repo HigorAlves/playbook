@@ -16,16 +16,12 @@ You can filter which part of the provisioning process to run by specifying a set
 
 #### Applications (installed with Homebrew Cask):
 
-  - [Docker](https://www.docker.com/)
-  - [Homebrew](http://brew.sh/)
-  - [Slack](https://slack.com/)
+- Docker
 
 #### Packages (installed with Homebrew):
 
-  - bash-completion
-  - git
-  - github/gh/gh
-  - gpg
-  - nvm
+- git
+
+#### Applications installed with MAS
 
 #### Dotfiles
