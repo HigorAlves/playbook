@@ -4,7 +4,10 @@ app_store_apps:
   - 409183694   # Keynote               (13.2)
   - 441258766   # Magnet                (2.14.0)
   - 640199958   # Developer             (10.5)
+  - 1527554407  # Mockup                (3.9)
+  - 1575220747  # Bakery                (2.11)
   - 899247664   # TestFlight            (3.5.1)
+  - 1667260533  # Sketch                (99.5)
   - 803453959   # Slack                 (4.36.140)
   - 1480933944  # Vimari                (2.1.1)
   - 1444383602  # Goodnotes             (6.3.6)
@@ -13,4 +16,4 @@ app_store_apps:
   - 1289197285  # MindNode              (2023.3.3)
   - 1339170533  # CleanMyMac X          (4.15.0)
   - 1462114288  # Grammarly for Safari  (9.72)
-  
+
