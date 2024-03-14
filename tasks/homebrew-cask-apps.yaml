@@ -67,3 +67,8 @@
   homebrew_cask:
     name: docker
     state: present
+    
+- name: Install GPG Suite via Homebrew Cask
+  homebrew_cask:
+    name: gpg-suite
+    state: present
