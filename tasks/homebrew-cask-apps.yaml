@@ -72,3 +72,13 @@
   homebrew_cask:
     name: gpg-suite
     state: present
+
+- name: Install Alacritty via Homebrew Cask
+  homebrew_cask:
+    name: alacritty
+    state: present
+
+- name: Install SF Mono Powerlline
+  homebrew:
+    name: font-sf-mono-nerd-font
+    state: present

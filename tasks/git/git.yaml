@@ -25,8 +25,8 @@
 - name: Clone dotfiles
   tags: setup
   git:
-    repo: 'https://github.com/HigorAlves/dotfiles'
-    dest: '~/dotfiles'
+    repo: 'https://github.com/HigorAlves/.dotfiles'
+    dest: '~/.dotfiles'
     depth: 1
     version: 'main'
 

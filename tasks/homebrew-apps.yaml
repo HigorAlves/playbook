@@ -62,3 +62,18 @@
   homebrew:
     name: stow
     state: present
+
+- name: Install AWS Logs
+  homebrew:
+    name: awslogs
+    state: present
+
+- name: Install Yabai
+  homebrew:
+    name: koekeishiya/formulae/yabai 
+    state: present
+
+- name: Install SKHD
+  homebrew:
+    name: koekeishiya/formulae/skhd
+    state: present
