@@ -77,8 +77,3 @@
   homebrew_cask:
     name: alacritty
     state: present
-
-- name: Install SF Mono Powerlline
-  homebrew:
-    name: font-sf-mono-nerd-font
-    state: present

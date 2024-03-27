@@ -27,11 +27,6 @@
   homebrew:
     name: shortcat
     state: present
-    
-- name: Install Iterm2
-  homebrew:
-    name: iterm2
-    state: present
 
 - name: Install Tmux
   homebrew:
@@ -70,10 +65,15 @@
 
 - name: Install Yabai
   homebrew:
-    name: koekeishiya/formulae/yabai 
+    name: koekeishiya/formulae/yabai
     state: present
 
 - name: Install SKHD
   homebrew:
     name: koekeishiya/formulae/skhd
+    state: present
+
+- name: Install SF Mono Powerlline
+  homebrew:
+    name: font-sf-mono-nerd-font
     state: present

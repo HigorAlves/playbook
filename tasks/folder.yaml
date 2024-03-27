@@ -13,9 +13,11 @@
     mode: '0755'
   loop:
     - AKQA
-    - Ask
-    - SROA
     - Arctouch
+    - Ask
+    - Career
     - Novac
     - OSS
+    - SROA
     - Study
+    - Templates

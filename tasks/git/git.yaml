@@ -6,16 +6,8 @@
     depth: 1
     version: 'master'
 
-- name: Clone MotoNomades
-  tags: novac
-  git:
-    repo: 'https://github.com/HigorAlves/motonomades'
-    dest: '~/Developer/Novac/motonomades'
-    depth: 1
-    version: 'main'
-
 - name: Clone Playbook
-  tags: novac
+  tags: setup
   git:
     repo: 'https://github.com/HigorAlves/playbook'
     dest: '~/Developer/OSS/playbook'
@@ -27,21 +19,5 @@
   git:
     repo: 'https://github.com/HigorAlves/.dotfiles'
     dest: '~/.dotfiles'
-    depth: 1
-    version: 'main'
-
-- name: Clone Personal website
-  tags: novac
-  git:
-    repo: 'https://github.com/HigorAlves/higoralves.dev'
-    dest: '~/Develooper/Novac/higoralves.dev'
-    depth: 1
-    version: 'main'
-
-- name: Clone Docs
-  tags: novac
-  git:
-    repo: 'https://github.com/HigorAlves/docs'
-    dest: '~/Develooper/Novac/docs'
     depth: 1
     version: 'main'
