@@ -6,14 +6,6 @@
     depth: 1
     version: 'master'
 
-- name: Clone Playbook
-  tags: setup
-  git:
-    repo: 'https://github.com/HigorAlves/playbook'
-    dest: '~/Developer/OSS/playbook'
-    depth: 1
-    version: 'main'
-
 - name: Clone dotfiles
   tags: setup
   git:

@@ -5,7 +5,6 @@
   
   vars_prompt:
     - name: new_hostname
-      tags: setup
       prompt: "Enter the new hostname for your machine"
       private: no
   
@@ -41,10 +40,6 @@
     - name: Clone Ask Git Repos
       tags: ask
       include_tasks: tasks/git/git-ask.yaml
-    
-    - name: Clone Arctouch Git Repos
-      tags: arctouch
-      include_tasks: tasks/git/git-at.yaml
     
     - name: Clone SROA Git Repos
       tags: sroa
