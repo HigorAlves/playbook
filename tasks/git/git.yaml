@@ -13,3 +13,11 @@
     dest: '~/.dotfiles'
     depth: 1
     version: 'main'
+
+- name: Clone TPM Tmux plugins
+  tags: setup
+  git:
+    repo: 'https://github.com/tmux-plugins/tpm'
+    dest: '~/.tmux/plugins/tpm'
+    depth: 1
+    version: 'main'

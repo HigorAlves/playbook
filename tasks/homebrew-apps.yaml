@@ -73,7 +73,8 @@
     name: font-sf-mono-nerd-font
     state: present
 
-- name: Install Bat
+- name: Install BAT
   homebrew:
     name: bat
     state: present
+
