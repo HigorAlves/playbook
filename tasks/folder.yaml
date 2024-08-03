@@ -4,19 +4,3 @@
     path: "~/Developer"
     state: directory
     mode: '0755'
-
-- name: Create a list of directories inside ~/Developer
-  tags: setup
-  file:
-    path: "~/Developer/{{ item }}"
-    state: directory
-    mode: '0755'
-  loop:
-    - AKQA
-    - Ask
-    - Career
-    - Novac
-    - OSS
-    - SROA
-    - Study
-    - Templates

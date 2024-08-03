@@ -7,21 +7,6 @@
   homebrew:
     name: nvm
     state: present
-    
-- name: Install Grafana K6
-  homebrew:
-    name: k6
-    state: present
-    
-- name: Install Terraform
-  homebrew:
-    name: terraform
-    state: present
-    
-- name: Install Shortcat
-  homebrew:
-    name: shortcat
-    state: present
 
 - name: Install Tmux
   homebrew:
@@ -58,23 +43,17 @@
     name: awslogs
     state: present
 
-- name: Install Yabai
-  homebrew:
-    name: koekeishiya/formulae/yabai
-    state: present
-
-- name: Install SKHD
-  homebrew:
-    name: koekeishiya/formulae/skhd
-    state: present
-
-- name: Install SF Mono Powerlline
-  homebrew:
-    name: font-sf-mono-nerd-font
-    state: present
-
 - name: Install BAT
   homebrew:
     name: bat
     state: present
 
+- name: Install OpenJDK
+  homebrew:
+    name: openjdk
+    state: present
+
+- name: Install StarShip
+  homebrew:
+    name: starship
+    state: present

@@ -33,17 +33,17 @@
   ansible.builtin.command:
     cmd: "defaults write com.apple.dock tilesize -int 36"  # Sets the Dock size. Adjust the integer value as desired.
   become: yes
-  
+
 - name: Enable Dock magnification
   ansible.builtin.command:
     cmd: "defaults write com.apple.dock magnification -bool true"  # Set to false to disable magnification
   become: yes
-  
+
 - name: Set magnification size (if magnification is enabled)
   ansible.builtin.command:
     cmd: "defaults write com.apple.dock largesize -int 128"  # Adjust the magnification size as desired.
   become: yes
-  
+
 - name: Set Dock to auto-hide
   ansible.builtin.command:
     cmd: "defaults write com.apple.dock autohide -bool true"

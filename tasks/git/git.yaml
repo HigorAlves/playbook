@@ -1,23 +1,7 @@
-- name: Clone Powerlevel10k with depth 1
-  tags: setup
-  git:
-    repo: 'https://github.com/romkatv/powerlevel10k.git'
-    dest: '~/powerlevel10k'
-    depth: 1
-    version: 'master'
-
 - name: Clone dotfiles
   tags: setup
   git:
     repo: 'https://github.com/HigorAlves/.dotfiles'
     dest: '~/.dotfiles'
-    depth: 1
-    version: 'main'
-
-- name: Clone TPM Tmux plugins
-  tags: setup
-  git:
-    repo: 'https://github.com/tmux-plugins/tpm'
-    dest: '~/.tmux/plugins/tpm'
     depth: 1
     version: 'main'

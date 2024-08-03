@@ -2,51 +2,31 @@
   homebrew_cask:
     name: google-chrome
     state: present
-    
+
 - name: Install Jetbrains Toolbox via Homebrew Cask
   homebrew_cask:
     name: jetbrains-toolbox
     state: present
-    
+
 - name: Install 1Password via Homebrew Cask
   homebrew_cask:
     name: 1password
     state: present
-    
+
 - name: Install Microsoft Teams via Homebrew Cask
   homebrew_cask:
     name: microsoft-teams
     state: present
-    
+
 - name: Install Zoom via Homebrew Cask
   homebrew_cask:
     name: zoom
-    state: present
-
-- name: Install MongoDB Compass via Homebrew Cask
-  homebrew_cask:
-    name: mongodb-compass
     state: present
 
 - name: Install Postman via Homebrew Cask
   homebrew_cask:
     name: postman
     state: present
-
-- name: Install Grammarly via Homebrew Cask
-  homebrew_cask:
-    name: grammarly
-    state: present
-
-- name: Tap homebrew/cask-fonts
-  shell: brew tap homebrew/cask-fonts
-  args:
-    executable: /bin/bash
-    
-- name: Install Nerd Fonts
-  shell: brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs brew install --cask
-  args:
-    executable: /bin/bash
 
 - name: Install Discord via Homebrew Cask
   homebrew_cask:
@@ -58,24 +38,19 @@
     name: spotify
     state: present
 
-- name: Install Notion via Homebrew Cask
-  homebrew_cask:
-    name: notion
-    state: present
-
 - name: Install Docker via Homebrew Cask
   homebrew_cask:
     name: docker
     state: present
-    
+
 - name: Install GPG Suite via Homebrew Cask
   homebrew_cask:
     name: gpg-suite
     state: present
 
-- name: Install Alacritty via Homebrew Cask
+- name: Install Iterm 2 via Homebrew Cask
   homebrew_cask:
-    name: alacritty
+    name: iterm2
     state: present
 
 - name: Install Cocoapods
