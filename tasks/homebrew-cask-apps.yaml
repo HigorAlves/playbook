@@ -43,6 +43,11 @@
     name: docker
     state: present
 
+- name: Install Docker Compose via Homebrew Cask
+  homebrew_cask:
+    name: docker-compose
+    state: present
+
 - name: Install GPG Suite via Homebrew Cask
   homebrew_cask:
     name: gpg-suite
@@ -56,4 +61,9 @@
 - name: Install Cocoapods
   homebrew_cask:
     name: cocoapods
+    state: present
+
+- name: Install Spotify via Homebrew Cask
+  homebrew_cask:
+    name: spotify
     state: present
