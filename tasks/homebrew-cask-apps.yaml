@@ -13,11 +13,6 @@
     name: 1password
     state: present
 
-- name: Install Microsoft Teams via Homebrew Cask
-  homebrew_cask:
-    name: microsoft-teams
-    state: present
-
 - name: Install Zoom via Homebrew Cask
   homebrew_cask:
     name: zoom
@@ -41,11 +36,6 @@
 - name: Install Docker via Homebrew Cask
   homebrew_cask:
     name: docker
-    state: present
-
-- name: Install Docker Compose via Homebrew Cask
-  homebrew_cask:
-    name: docker-compose
     state: present
 
 - name: Install GPG Suite via Homebrew Cask
