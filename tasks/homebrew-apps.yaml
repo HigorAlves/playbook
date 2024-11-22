@@ -57,8 +57,3 @@
   homebrew:
     name: starship
     state: present
-
-- name: Install Qodana
-  homebrew:
-    name: jetbrains/utils/qodana
-    state: present
