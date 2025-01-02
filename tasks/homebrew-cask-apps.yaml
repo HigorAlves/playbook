@@ -28,11 +28,6 @@
     name: discord
     state: present
 
-- name: Install Spotify via Homebrew Cask
-  homebrew_cask:
-    name: spotify
-    state: present
-
 - name: Install Docker via Homebrew Cask
   homebrew_cask:
     name: docker
@@ -43,9 +38,9 @@
     name: gpg-suite
     state: present
 
-- name: Install Iterm 2 via Homebrew Cask
+- name: Install Ghostty via Homebrew Cask
   homebrew_cask:
-    name: iterm2
+    name: ghostty
     state: present
 
 - name: Install Cocoapods

@@ -57,3 +57,8 @@
   homebrew:
     name: starship
     state: present
+
+- name: Install OpenVPN
+  homebrew:
+    name: openvpn
+    state: present
