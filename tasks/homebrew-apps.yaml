@@ -8,11 +8,6 @@
     name: nvm
     state: present
 
-- name: Install Tmux
-  homebrew:
-    name: tmux
-    state: present
-
 - name: Install Watchman
   homebrew:
     name: watchman
@@ -21,6 +16,11 @@
 - name: Install NeoVim (NVim)
   homebrew:
     name: neovim
+    state: present
+
+- name: Install fzf Fuzzy Finder
+  homebrew:
+    name: fzf
     state: present
 
 - name: Install Mas
@@ -61,4 +61,9 @@
 - name: Install OpenVPN
   homebrew:
     name: openvpn
+    state: present
+
+- name: Install zsh syntax highlighting
+  homebrew:
+    name: zsh-syntax-highlighting
     state: present

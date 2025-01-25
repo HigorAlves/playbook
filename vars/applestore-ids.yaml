@@ -3,7 +3,6 @@ app_store_apps:
   - 497799835   # Xcode
   - 409183694   # Keynote
   - 899247664   # TestFlight
-  #  - 1667260533  # Sketch
   - 803453959   # Slack
   - 1480933944  # Vimari
   - 1339170533  # CleanMyMac X
@@ -12,5 +11,4 @@ app_store_apps:
   - 1480933944  # Vimari
   - 441258766   # Magnet
 
-# - 1339170533  CleanMyMac            (5.0.3)
 # - 1233965871  # ScreenBrush           (1.8.10)

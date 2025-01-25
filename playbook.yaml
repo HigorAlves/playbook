@@ -9,6 +9,10 @@
       private: no
 
   tasks:
+    - name: Base MAC OS config
+      tags: setup
+      include_tasks: tasks/base.yaml
+
     - name: Include MacOS config
       tags: setup
       include_tasks: tasks/macos-config.yaml
@@ -36,3 +40,7 @@
     - name: Clone Git Repos
       tags: setup
       include_tasks: tasks/git/git.yaml
+
+    - name: Setup .Dotfiles
+      tags: setup
+      include_tasks: tasks/dotfiles.yaml
