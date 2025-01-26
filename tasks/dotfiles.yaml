@@ -1,7 +1,6 @@
 - name: Decrypt specific encrypted files
   tags: setup
-  ansible.builtin.command:
-    cmd: ansible-vault decrypt {{ item }}
+  ansible.builtin.command: ansible-vault decrypt {{ item }}
   loop:
     - '~/.dotfiles/.aws/config'
     - '~/.dotfiles/.aws/credentials'
@@ -9,15 +8,10 @@
     - '~/.dotfiles/.ssh/id_ed25519.pub'
     - '~/.dotfiles/.ssh/natura'
     - '~/.dotfiles/.ssh/natura.pub'
-    - '~/.dotfiles/gpg-keys/Higor Alves (7E580DB3) – Secret.asc'
-  vars_prompt:
-    - name: vault_password
-      prompt: "Enter the vault password for decryption"
-      private: yes
+    - '~/.dotfiles/gpg-keys/higoralves.asc'
 
 - name: Stow dotfiles
   tags: setup
-  ansible.builtin.command:
-    cmd: stow -t ~ */
+  ansible.builtin.command: stow -t ~ ~/.dotfiles
   args:
-    chdir: '{{ ansible_env.HOME }}/.dotfiles'
+    chdir: '~/.dotfiles'

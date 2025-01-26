@@ -8,6 +8,11 @@
     name: nvm
     state: present
 
+- name: Install PyEnv
+  homebrew:
+    name: pyenv
+    state: present
+
 - name: Install Watchman
   homebrew:
     name: watchman

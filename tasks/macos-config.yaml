@@ -52,20 +52,3 @@
   ansible.builtin.command:
     cmd: "defaults write com.apple.menuextra.battery ShowPercent -string 'YES'"
   become: false
-
-- name: Remove an app from the Dock by name
-  ansible.builtin.command:
-    cmd: |
-      defaults write com.apple.dock persistent-apps -array \
-      $(defaults read com.apple.dock persistent-apps | \
-      plutil -convert json -o - -- - | \
-      jq '[.[] | select(.tile-data.file-label != "{{ app_name }}")]' | \
-      plutil -convert binary1 -o - -- -)
-  become: yes
-  vars:
-    app_name: "News"
-
-- name: Restart Dock to apply changes
-  ansible.builtin.command:
-    cmd: "killall Dock"
-  become: yes

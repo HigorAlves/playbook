@@ -9,10 +9,6 @@
       private: no
 
   tasks:
-    - name: Base MAC OS config
-      tags: setup
-      include_tasks: tasks/base.yaml
-
     - name: Include MacOS config
       tags: setup
       include_tasks: tasks/macos-config.yaml
