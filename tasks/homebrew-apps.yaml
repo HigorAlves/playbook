@@ -72,3 +72,18 @@
   homebrew:
     name: zsh-syntax-highlighting
     state: present
+
+- name: Install BTop
+  homebrew:
+    name: btop
+    state: present
+
+- name: Install Lazy Git
+  homebrew:
+    name: jesseduffield/lazygit/lazygit
+    state: present
+
+- name: Install Lazy Docker
+  homebrew:
+    name: lazydocker
+    state: present
