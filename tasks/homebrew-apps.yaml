@@ -87,3 +87,19 @@
   homebrew:
     name: lazydocker
     state: present
+
+- name: Install Gource
+  homebrew:
+    name: Gource
+    state: present
+
+- name: Install PostgreSQL
+  homebrew:
+    name: postgresql
+    version: 16
+    state: present
+
+- name: Install Git LFS
+  homebrew:
+    name: git-lfs
+    state: present
