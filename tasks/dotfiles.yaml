@@ -6,8 +6,6 @@
     - '~/.dotfiles/.aws/credentials'
     - '~/.dotfiles/.ssh/id_ed25519'
     - '~/.dotfiles/.ssh/id_ed25519.pub'
-    - '~/.dotfiles/.ssh/natura'
-    - '~/.dotfiles/.ssh/natura.pub'
     - '~/.dotfiles/gpg-keys/higoralves.asc'
 
 - name: Stow dotfiles

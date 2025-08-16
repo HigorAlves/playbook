@@ -1,6 +1,12 @@
-- name: Ensure the Developer directory exists
+- name: Ensure Developer and subdirectories exist
   tags: setup
   file:
-    path: "~/Developer"
+    path: "{{ item }}"
     state: directory
     mode: '0755'
+  loop:
+    - "~/Developer"
+    - "~/Developer/system"
+    - "~/Developer/tools"
+    - "~/Developer/templates"
+    - "~/Developer/projects"

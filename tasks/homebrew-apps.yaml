@@ -96,7 +96,7 @@
 - name: Install PostgreSQL
   homebrew:
     name: postgresql
-    version: 16
+    version: 17
     state: present
 
 - name: Install Git LFS
