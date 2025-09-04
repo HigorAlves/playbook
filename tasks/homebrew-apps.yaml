@@ -80,7 +80,7 @@
 
 - name: Install Lazy Git
   homebrew:
-    name: jesseduffield/lazygit/lazygit
+    name: lazygit
     state: present
 
 - name: Install Lazy Docker
@@ -93,13 +93,12 @@
     name: Gource
     state: present
 
-- name: Install PostgreSQL
-  homebrew:
-    name: postgresql
-    version: 17
-    state: present
-
 - name: Install Git LFS
   homebrew:
     name: git-lfs
+    state: present
+
+- name: Install Codex
+  homebrew:
+    name: codex
     state: present
